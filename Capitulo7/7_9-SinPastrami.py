@@ -5,12 +5,16 @@
 pedidos_bocadillos = ['Bocadillo de atún', 'Bocadillo de pastrami', 'Bocadillo de salchichón', 'Bocadillo de tortilla', 'Bocadillo de pastrami', 'Bocadillo de calamares', 'Bocadillo de pastrami', 'Bocadillo de pastrami']
 bocadillos_terminados = []
 
+#Nos dicen que no hay pastrami
 print('No quedan bocadillos de pastrami')
+#Borro el pastrami de la lista
+while 'Bocadillo de pastrami' in pedidos_bocadillos:
+    pedidos_bocadillos.remove('Bocadillo de pastrami')
+#Hago los bocadillos
 while len(pedidos_bocadillos) != 0:
     bocadillo = pedidos_bocadillos.pop()
-    if bocadillo != 'Bocadillo de pastrami':
-        print(f'Se esta preparando el {bocadillo}')
-        bocadillos_terminados.append(bocadillo)
-
+    print(f'Se esta preparando el {bocadillo}')
+    bocadillos_terminados.append(bocadillo)
+#SAco los que he preparado por pantalla
 for bocadillo in bocadillos_terminados:
     print(bocadillo)
