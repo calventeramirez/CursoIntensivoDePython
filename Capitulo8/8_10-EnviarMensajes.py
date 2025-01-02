@@ -11,7 +11,7 @@ mensajes = ['Hola Mundo', 'Hello Wordl', 'Adios', 'Good Bye']
 enviados = []
 
 mostrar_mensajes(mensajes)
-enviar_mensaje(mensajes[:], enviados)
+enviar_mensaje(mensajes, enviados)
 
 print(mensajes)
 print(enviados)
