@@ -1,0 +1,3 @@
+En Python puedes guardar la información que tu quieras.
+En Python puedes conectar partes de información.
+En Python puedes modelar situaciones del mundo real.
