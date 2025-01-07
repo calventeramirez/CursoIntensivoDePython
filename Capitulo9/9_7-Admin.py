@@ -1,6 +1,3 @@
-from turtledemo.paint import switchupdown
-
-
 class Usuario:
     """Clase que representa a un usuario"""
     def __init__(self, nombre, apellidos, nick, correo, clave):
