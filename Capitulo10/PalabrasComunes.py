@@ -12,7 +12,12 @@ def contadorDePalabrasComunes(ruta, palabraBuscar):
         cont += linea.lower().count(palabraBuscar)
     return cont
 
+print('Conteador de palabras comunes')
+print('------------------------------')
+palabraBuscar = input('Introduce la palabra a buscar en los libros: ')
+
 for libro in libros:
     pathFinal = path + libro
-    contador.append(contadorDePalabrasComunes(pathFinal, 'then '))
-print(contador)
+    contador.append(contadorDePalabrasComunes(pathFinal, palabraBuscar))
+
+print(f'El numero de {palabraBuscar} en {libros[0]} es {contador[0]}, en {libros[1]} es {contador[1]} y en {libros[2]} es {contador[2]}')
